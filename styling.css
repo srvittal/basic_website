@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+
+body {
+    font-family: Handlee;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.con {
+    position: relative;
+    background-image: url("malta.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.con::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(211, 211, 211, 0.4);
+}
+
+.button {
+    text-align: center;
+    position: relative;  
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+#button1 {
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    background-color: rgba(211, 211, 211, 0.7);
+    margin: 1em;
+    padding: 0.5em;
+    border-radius: 1em;
+    width: 320px;
+    display: inline-block;
+    z-index: 1;
+}
+
+#button2 {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    background-color: rgba(211, 211, 211, 0.7);
+    margin: 1em;
+    padding: 0.5em;
+    border-radius: 1em;
+    width: 320px;
+    display: inline-block;
+    z-index: 1;
+}
+
+#button1:hover { border: 1px solid #000000;}
+#button2:hover { border: 1px solid #000000;}
+#button1:active { background-color: rgba(149, 165, 166, 0.7);}
+#button2:active { background-color: rgba(149, 165, 166, 0.7);}
+
+
+a { text-decoration: none; color: black;}
+a:visited { text-decoration: none; color: black; }
+a:hover { text-decoration: none; color: black; }
+a:focus { text-decoration: none; color: black; }
+a:hover, a:active { text-decoration: none; color: black; }
+
+.nav {
+    background-color: rgba(211, 211, 211, 0.7);
+    height: auto;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+}
+
+.nav a {
+    color: #ffffff;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+  
+  .nav a:hover {
+    color: #000000;
+    padding: 10px;
+    border: 2px solid #000000;
+    border-radius: 15px;
+    animation: ease;
+}
+
+                                            /* ===== Flex Box ===== */
+
+.intro {
+    text-align: center;
+}
+
+.name {
+    flex: 1;
+    display: inline-grid;
+}
+
+.me {
+    text-align: right;
+    flex: 1;
+    display: inline-grid;
+}
+
+.city {
+    text-align: center;
+}
+
+.city_name {
+    flex: 1;
+    display: inline-grid;
+}
+
+.nap_img {
+    flex: 1;
+    display: inline-grid;
+}
+
+.historic {
+    text-align: center;
+}
+
+.place_1 {
+    flex: 1;
+    display: inline-grid;
+}
+
+.place_2 {
+    flex: 1;
+    display: inline-grid;
+}
+
+.place_3 {
+    flex: 1;
+    display: inline-grid;
+}
+
+.footer {
+    text-align: center;
+}
+
+
+                                            /* ===== Simple Grid ===== */
+/* POSITIONING */
+
+.left {
+    text-align: left;
+  }
+  
+  .right {
+    text-align: right;
+  }
+  
+  .center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .justify {
+    text-align: justify;
+  }
+  
+  /* ==== GRID SYSTEM ==== */
+  
+  .container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .row {
+    position: relative;
+    width: 100%;
+  }
+  
+  .row [class^="col"] {
+    float: left;
+    margin: 0.5rem 2%;
+    min-height: 0.125rem;
+  }
+  
+  .col-1,
+  .col-2,
+  .col-3,
+  .col-4,
+  .col-5,
+  .col-6,
+  .col-7,
+  .col-8,
+  .col-9,
+  .col-10,
+  .col-11,
+  .col-12 {
+    width: 96%;
+  }
+  
+  .col-1-sm {
+    width: 4.33%;
+  }
+  
+  .col-2-sm {
+    width: 12.66%;
+  }
+  
+  .col-3-sm {
+    width: 21%;
+  }
+  
+  .col-4-sm {
+    width: 29.33%;
+  }
+  
+  .col-5-sm {
+    width: 37.66%;
+  }
+  
+  .col-6-sm {
+    width: 46%;
+  }
+  
+  .col-7-sm {
+    width: 54.33%;
+  }
+  
+  .col-8-sm {
+    width: 62.66%;
+  }
+  
+  .col-9-sm {
+    width: 71%;
+  }
+  
+  .col-10-sm {
+    width: 79.33%;
+  }
+  
+  .col-11-sm {
+    width: 87.66%;
+  }
+  
+  .col-12-sm {
+    width: 96%;
+  }
+  
+  .row::after {
+      content: "";
+      display: table;
+      clear: both;
+  }
+  
+  .hidden-sm {
+    display: none;
+  }
+  
+  @media only screen and (min-width: 33.75em) {  /* 540px */
+    .container {
+      width: 80%;
+    }
+  }
+  
+  @media only screen and (min-width: 45em) {  /* 720px */
+    .col-1 {
+      width: 4.33%;
+    }
+  
+    .col-2 {
+      width: 12.66%;
+    }
+  
+    .col-3 {
+      width: 21%;
+    }
+  
+    .col-4 {
+      width: 29.33%;
+    }
+  
+    .col-5 {
+      width: 37.66%;
+    }
+  
+    .col-6 {
+      width: 46%;
+    }
+  
+    .col-7 {
+      width: 54.33%;
+    }
+  
+    .col-8 {
+      width: 62.66%;
+    }
+  
+    .col-9 {
+      width: 71%;
+    }
+  
+    .col-10 {
+      width: 79.33%;
+    }
+  
+    .col-11 {
+      width: 87.66%;
+    }
+  
+    .col-12 {
+      width: 96%;
+    }
+  
+    .hidden-sm {
+      display: block;
+    }
+  }
+  
+  @media only screen and (min-width: 60em) { /* 960px */
+    .container {
+      width: 75%;
+      max-width: 60rem;
+    }
+  }
+  
