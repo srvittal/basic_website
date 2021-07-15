@@ -16,71 +16,8 @@ body {
     min-height: 100vh;
     margin: 0;
     padding: 0;
+    overflow: overlay;
 }
-
-.con {
-    position: relative;
-    background-image: url("malta.jpg");
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-}
-
-.con::before {
-    content: "";
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    background-color: rgba(211, 211, 211, 0.4);
-}
-
-.button {
-    text-align: center;
-    position: relative;  
-    top: 50%;
-    transform: translateY(-50%);
-
-}
-
-#button1 {
-    font-size: 25px;
-    font-weight: bold;
-    color: black;
-    text-align: center;
-    background-color: rgba(211, 211, 211, 0.7);
-    margin: 1em;
-    padding: 0.5em;
-    border-radius: 1em;
-    width: 320px;
-    display: inline-block;
-    z-index: 1;
-}
-
-#button2 {
-    font-size: 25px;
-    font-weight: bold;
-    text-align: center;
-    color: black;
-    background-color: rgba(211, 211, 211, 0.7);
-    margin: 1em;
-    padding: 0.5em;
-    border-radius: 1em;
-    width: 320px;
-    display: inline-block;
-    z-index: 1;
-}
-
-#button1:hover { border: 1px solid #000000;}
-#button2:hover { border: 1px solid #000000;}
-#button1:active { background-color: rgba(149, 165, 166, 0.7);}
-#button2:active { background-color: rgba(149, 165, 166, 0.7);}
-
 
 a { text-decoration: none; color: black;}
 a:visited { text-decoration: none; color: black; }
@@ -118,20 +55,30 @@ a:hover, a:active { text-decoration: none; color: black; }
     animation: ease;
 }
 
-                                            /* ===== Flex Box ===== */
 
-.flexcontain {
-    transform: translateY(10%);
+body::-webkit-scrollbar {
+  width: 12px;               
 }
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(149, 165, 166, 0.7);   
+  border-radius: 25px;   
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(211, 211, 211, 0.9);
+  border: 1px solid black; 
+}
+
 
 .bg {
     position: relative;
-    background-image: url("malta.jpg");
+    background-image: url("tableMountain.jpg");
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
-    background-attachment: scroll;
-    height: 100vh;
+    background-attachment: fixed;
+    height: 135vh;
     margin: 0;
     padding: 0;
 }
@@ -143,14 +90,16 @@ a:hover, a:active { text-decoration: none; color: black; }
     right: 0px;
     bottom: 0px;
     left: 0px;
-    background-color: rgba(211, 211, 211, 0.4);
+    background-color: rgba(211, 211, 211, 0.5);
 }
 
+
 .me {
+    /* text-align: right; 
     object-fit:round;
     border-radius: 50%;
-    overflow: hidden;
-    border: 1px solid black;
+    overflow: hidden; 
+    border: 1px solid black; */
 }
 
 .intro {
@@ -158,46 +107,49 @@ a:hover, a:active { text-decoration: none; color: black; }
 }
 
 .name {
-    flex: 1;
-    display: inline-grid;
-}
-
-.me {
-    text-align: right;
-    flex: 1;
-    display: inline-grid;
-}
-
-.city {
-    text-align: center;
+    position: relative;
+    top: 120px;
+    left: 100px;
 }
 
 .city_name {
-    flex: 1;
-    display: inline-grid;
+    position: relative;
+    bottom: 150px;
 }
 
 .nap_img {
-    flex: 1;
-    display: inline-grid;
+    position: relative;
+    right: 150px;
 }
+
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  th {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  tr{
+    background-color: rgba(211, 211, 211, 0.7);
+  }
 
 .historic {
     text-align: center;
 }
 
 .place_1 {
-    flex: 1;
     display: inline-grid;
 }
 
 .place_2 {
-    flex: 1;
     display: inline-grid;
 }
 
 .place_3 {
-    flex: 1;
     display: inline-grid;
 }
 
