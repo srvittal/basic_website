@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
 
+.flag {
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209282/flags.png");
+    background-position: -4px -129px;
+    display: inline-block;
+    height: 17px;
+    width: 23px;
+  }
+  .flag-IT {
+    background-position: -37px -444px;
+  }
+  
 body {
     font-family: Handlee;
     min-height: 100vh;
@@ -109,6 +120,39 @@ a:hover, a:active { text-decoration: none; color: black; }
 
                                             /* ===== Flex Box ===== */
 
+.flexcontain {
+    transform: translateY(10%);
+}
+
+.bg {
+    position: relative;
+    background-image: url("malta.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-attachment: scroll;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.bg::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(211, 211, 211, 0.4);
+}
+
+.me {
+    object-fit:round;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid black;
+}
+
 .intro {
     text-align: center;
 }
@@ -189,6 +233,7 @@ a:hover, a:active { text-decoration: none; color: black; }
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+    transform: translateY(10%);
   }
   
   .row {
