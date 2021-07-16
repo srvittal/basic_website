@@ -79,7 +79,7 @@ body::-webkit-scrollbar-thumb:hover {
     background-position: top;
     background-size: cover;
     background-attachment: fixed;
-    height: 132vh;
+    height: 225vh;
     margin: 0;
     padding: 0;
 }
@@ -94,15 +94,6 @@ body::-webkit-scrollbar-thumb:hover {
     background-color: rgba(211, 211, 211, 0.5);
 }
 
-
-.me {
-    /* text-align: right; 
-    object-fit:round;
-    border-radius: 50%;
-    overflow: hidden; 
-    border: 1px solid black; */
-}
-
 .intro {
     text-align: center;
 }
@@ -115,7 +106,8 @@ body::-webkit-scrollbar-thumb:hover {
 
 .city_name {
     position: relative;
-    bottom: 150px;
+    bottom: 60px;
+    padding: 0;
 }
 
 .nap_img {
@@ -123,6 +115,10 @@ body::-webkit-scrollbar-thumb:hover {
     right: 150px;
 }
 
+.city_name:hover {
+  background-color: rgba(211, 211, 211, 0.7);
+  border-radius: 2.5em;
+}
 
 table {
     margin-left: auto;
@@ -138,20 +134,29 @@ table {
     background-color: rgba(211, 211, 211, 0.7);
   }
 
-.historic {
-    text-align: center;
+  #tableHead {
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+.place {
+  margin: 1em;
+  text-align: center;
 }
 
-.place_1 {
-    display: inline-grid;
+.histname {
+  font-size: 16px;
 }
 
-.place_2 {
-    display: inline-grid;
+.histimg {
+  padding: 0;
 }
 
-.place_3 {
-    display: inline-grid;
+h4 {
+  padding: 2em;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .footer {
@@ -342,7 +347,7 @@ table {
   
   @media only screen and (max-height: 768px){
     .bg {
-      height: 185vh;
+      height: 317vh;
     }
   
   }

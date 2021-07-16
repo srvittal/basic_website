@@ -18,6 +18,7 @@ body {
     padding: 0;
     overflow: overlay;
     overflow-x: hidden;
+    display: flex;
 }
 
 a { text-decoration: none; color: black;}
@@ -84,7 +85,7 @@ body::-webkit-scrollbar-thumb:hover {
     background-position: top;
     background-size: cover;
     background-attachment: fixed;
-    height: 111vh;
+    height: 177vh;
     margin: 0;
     padding: 0;
 }
@@ -100,8 +101,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 h2 {
-  position: relative;
-  left: 120px;
+  padding-left: 2.5rem;
 }
 
 .me {
@@ -128,20 +128,22 @@ h2 {
 
 .city {
   text-align: center;
+  display: flex;
 }
 
 .city_name {
-    position: relative;
-    flex: 1;
-    display: inline-grid;
-    bottom: 150px;
+    flex: 2;
+    right: 5em;
+    padding: 1rem;
 }
 
 .nap_img {
-    position: relative;
     flex: 1;
-    display: inline-grid;
-    right: 150px;
+    left: 5em;
+    text-align: right;
+    padding: 1rem;
+    padding-top: 0;
+    padding-right: 0;
 }
 
 table {
@@ -158,32 +160,80 @@ tr{
   background-color: rgba(211, 211, 211, 0.7);
 }
 
+#tableHead {
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
 .historic {
-    text-align: center;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.histname {
+  text-align: center;
+  padding-top: 0;
 }
 
 .place_1 {
     flex: 1;
-    display: inline-grid;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.place_1:hover {
+  background-color: rgba(211, 211, 211, 0.7);
+  border-radius: 2.5em;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .place_2 {
     flex: 1;
-    display: inline-grid;
+}
+
+.place_2:hover {
+  background-color: rgba(211, 211, 211, 0.7);
+  border-radius: 2.5em;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .place_3 {
     flex: 1;
-    display: inline-grid;
+}
+
+.place_3:hover {
+  background-color: rgba(211, 211, 211, 0.7);
+  border-radius: 2.5em;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.histimg {
+    text-align: center;
+    padding: 0;
+}
+
+.histinfo {
+    text-align: left;
+    margin: 0.5em;
 }
 
 .footer {
     text-align: center;
 }
 
+.which_city:hover {
+  background-color: rgba(211, 211, 211, 0.7);
+  border-radius: 2.5em;
+}
+
 @media only screen and (max-height: 768px){
   .bg {
-    height: 156vh;
+    height: 246vh;
   }
 }
 
@@ -210,7 +260,6 @@ h2 {
   left: 10px;
   margin: 0.1%;
 }
-
 }
 
 @media only screen and (min-width: 45em) {  /* 720px */
@@ -233,7 +282,6 @@ h2 {
   left: 10px;
   margin: 0.1%;
 }
-
 }
 
 @media only screen and (min-width: 46.4em) {  /* 720px */
@@ -256,7 +304,6 @@ h2 {
   left: 10px;
   margin: 0.1%;
 }
-
 }
 
 
