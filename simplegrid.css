@@ -17,6 +17,7 @@ body {
     margin: 0;
     padding: 0;
     overflow: overlay;
+    overflow-x: hidden;
 }
 
 a { text-decoration: none; color: black;}
@@ -78,7 +79,7 @@ body::-webkit-scrollbar-thumb:hover {
     background-position: top;
     background-size: cover;
     background-attachment: fixed;
-    height: 135vh;
+    height: 132vh;
     margin: 0;
     padding: 0;
 }
@@ -339,3 +340,9 @@ table {
     }
   }
   
+  @media only screen and (max-height: 768px){
+    .bg {
+      height: 185vh;
+    }
+  
+  }
